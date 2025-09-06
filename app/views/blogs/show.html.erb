@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+<div class="honbun">
+ <p>
+   <strong>タイトル</strong>
+   <%= @blog.title %>
+ </p>
+ 
+ <p>
+   <strong>開始時間</strong>
+   <%= @blog.start_time.strftime("%Y-%m-%d %H:%M") %>
+ </p>
+
+ <p>
+  <strong>終了時間</strong>
+  <%= @blog.end_time.strftime("%Y-%m-%d %H:%M") if @blog.end_time.present? %>
+  </p>
+
+ <p>
+   <strong>内容</strong>
+   <%= @blog.content %>
+ </p>
+</div>
+<%= link_to 'Edit', edit_blog_path(@blog) %> |
+<%= link_to 'Back', blogs_path %>

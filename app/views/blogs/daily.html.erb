@@ -1,0 +1,34 @@
+<div class="midasi">
+<h2><%= @date.strftime("%Y年%m月%d日") %> の一覧</h2>
+</div>
+
+<div class="yotei">
+ <h3>予定</h3>
+ <% if @blogs.any? %>
+   <ul>
+     <% @blogs.each do |blog| %>
+       <li>
+         <%= link_to blog.title, blog_path(blog) %>
+         (<%= blog.start_time.strftime("%H:%M") if blog.start_time %>)
+       </li>
+     <% end %>
+   </ul>
+ <% else %>
+   <p>予定はありません</p>
+ <% end %>
+</div>
+
+<div class="nikki">
+ <h3>日記</h3>
+ <% if @dairies.any? %>
+   <ul>
+     <% @dairies.each do |dairy| %>
+       <li>
+         <%= link_to dairy.title, dairy_path(dairy) %>
+       </li>
+     <% end %>
+   </ul>
+ <% else %>
+   <p>日記はありません</p>
+ <% end %>
+</div>

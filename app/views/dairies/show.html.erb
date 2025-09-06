@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>タイトル</strong>
+  <%= @dairy.title %>
+</p>
+
+<p>
+  <strong>内容</strong>
+  <%= @dairy.content %>
+</p>
+
+<p>
+ <strong>写真</strong>
+ <br>
+ <% if @dairy.image.attached? %>
+    <%= image_tag @dairy.image, size: '250x200'%>
+ <% end %>
+</p>
+
+<%= link_to 'Edit', edit_dairy_path(@dairy) %> |
+<%= link_to 'Back', blogs_path %>

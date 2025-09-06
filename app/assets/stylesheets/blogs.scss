@@ -1,0 +1,116 @@
+body.blogs.index {
+  margin: 0;
+  padding: 0;
+  height: 100vh;   /* 画面の高さにフィット */
+  display: flex;
+  flex-direction: column; /* 上から順に並べる */
+  background: #f0cd9f;
+}
+.zentai {
+  flex: 1;  /* 高さ方向でも伸びる */
+  display: flex;
+  justify-content: space-between; /* 左右に配置 */
+  align-items: stretch; /* 縦方向も引き伸ばす */
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.yotei, .nikki {
+  flex: 0 0 350px; /* 横幅固定 */
+  height: 700px;    /* 縦いっぱいに */
+  border-radius: 6px;
+  font-size: 12.3px;
+  background: #eec083;
+}
+
+.calendar {
+  flex: 1;              /* 残りの幅を全部使う */
+  height: 670px;         /* 縦いっぱい */
+  background: #eee;
+  padding: 1rem;
+  border-radius: 6px;
+  grid-template-columns: repeat(7, 1fr); /* 7列均等 */
+  grid-auto-rows: 1fr;  /* 高さも均等に */
+  gap: 2px;
+}
+
+body.blogs.edit{
+    background: #ce9052;
+    margin: 0;
+    padding: 0;
+    display: auto;
+
+}
+
+.hontai{
+    justify-content: center;
+    background-color: #ffd76b;
+    flex-direction: column;
+    height: 100vh;
+    margin: auto;
+    width: 60%;
+}
+.p{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.katamari{
+    background: #b9b8b8;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 20vh;
+}
+.title{
+    font-size: 16px;
+
+}
+
+.time{
+
+}
+
+.end-time{
+
+}
+
+body.blogs.daily{
+  background: #ce9052; 
+}
+
+.midasi{
+  background: #f0cd9f;
+  border-bottom: 2px double black;
+
+}
+
+daily.yotei{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: #f0cd9f;
+}
+
+daily.nikki{
+  margin-top: auto;
+  margin-bottom: 20px;
+  background: #f0cd9f;
+}
+
+body.blogs.show{
+  background: #f0cd9f;
+}
+
+.honbun{
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: #dbdbdb;
+
+
+}
+
+body.blogs.new{
+  background: #f0cd9f;
+}
