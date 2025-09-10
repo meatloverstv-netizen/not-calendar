@@ -112,5 +112,35 @@ body.blogs.show{
 }
 
 body.blogs.new{
-  background: #f0cd9f;
+    background: #ce9052;
+    margin: 0;
+    padding: 0;
+    display: auto;
+
+}
+
+.hontai{
+    justify-content: center;
+    background-color: #ffd76b;
+    flex-direction: column;
+    height: 100vh;
+    margin: auto;
+    width: 60%;
+}
+.p{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.katamari{
+    background: #b9b8b8;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 20vh;
+}
+.title{
+    font-size: 16px;
+
 }
